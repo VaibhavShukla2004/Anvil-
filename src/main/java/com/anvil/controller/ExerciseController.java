@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.anvil.model.Exercise;
 import com.anvil.service.ExerciseService;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/exercise")
+@CrossOrigin(origins = "*")
 public class ExerciseController {
 
     @Autowired
